@@ -4,20 +4,23 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>goit-advancedjs-hw-01</title>
+  <title>goit-advancedjs-hw-03</title>
   <link rel="stylesheet" href="../node_modules/simplelightbox/dist/simple-lightbox.css">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-
 <main>
-  <div class="card">
-    <h2 class="menu-name">goit-advancedjs-hw1</h2>
-    <ul class="main-menu">
-      <li><a href="./1-gallery.html">Gallery</a></li>
-      <li><a href="./2-form.html">Form</a></li>
-    </ul>
+  <div class="wrapper">
+    <form class="search-form" name="search-form">
+      <input type="text" class="input" placeholder="Search word..." name="input" required>
+
+      <button class="submit-btn">Search</button>
+    </form>
   </div>
+  <div class="loader"></div>
+  <ul class="gallery"></ul>
 </main>
+<script type="module" src="./main.js"></script>
 </body>
 </html>
+
